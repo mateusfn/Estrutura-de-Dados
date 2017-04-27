@@ -12,13 +12,9 @@ public class Principal {  //classe principal
     Filme filme = new Filme();
     Locar locar = new Locar();
     public static void main(String[] args) {   //metodo principal
-        long tempoInicial = System.currentTimeMillis();
         new Cliente().recuperar();
         new Filme().recuperar();
         new Locar().recuperar();
-        long tempoAtual = System.currentTimeMillis();
-        long tempoLevado = tempoAtual - tempoInicial;
-        System.out.println("o metodo executou em " + tempoLevado);
         new Principal().sistema();
     }
 
